@@ -14,7 +14,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   }
 
   return (
-    <FormVagasStyles onSubmit={aoEnviarForm}>
+    <FormVagasStyles as="form" onSubmit={aoEnviarForm}>
       <input
         placeholder="Front-end, fullstack, node, design"
         onChange={(e) => setTermo(e.target.value)}
